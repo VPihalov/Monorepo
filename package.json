@@ -5,6 +5,13 @@
     "node": "16.x",
     "yarn": "1.22.x"
   },
-  "workspaces": ["backend", "frontend"],
-  "devDependencies": {}
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
 }
