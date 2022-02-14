@@ -1,0 +1,36 @@
+{
+  "branchNameLinter": {
+    "regex": "^(?:feature|hotfix)/#MON-[0-9]+-(?:[a-z]{2,}|[a-z][0-9]|[0-9][a-z]|[0-9]+.[0-9]+.[0-9]+)(?:-[a-z]{2,}|-[a-z][0-9]|-[0-9][a-z]){0,4}$|^release/v[0-9]+.[0-9]+.[0-9]+$|^release/\\d{4}\\.(0?[1-9]|1[012])\\.(0?[1-9]|[12][0-9]|3[01])$",
+    "prefixes": [
+      "feature",
+      "f",
+      "hotfix",
+      "h",
+      "release",
+      "r"
+    ],
+    "suggestions": {
+      "features": "feature",
+      "feat": "feature",
+      "fix": "hotfix",
+      "releases": "release"
+    },
+    "banned": [
+      "wip"
+    ],
+    "skip": [
+      "skip-ci"
+    ],
+    "disallowed": [
+      "main",
+      "develop",
+      "staging"
+    ],
+    "separator": "",
+    "msgBranchBanned": "Branches with the name \"%s\" are not allowed.",
+    "msgBranchDisallowed": "Pushing to \"%s\" is not allowed, use git-flow.",
+    "msgPrefixNotAllowed": "Branch prefix \"%s\" is not allowed.",
+    "msgPrefixSuggestion": "Instead of \"%s\" try \"%s\".",
+    "msgseparatorRequired": "Branch \"%s\" must contain a separator \"%s\"."
+  }
+}
