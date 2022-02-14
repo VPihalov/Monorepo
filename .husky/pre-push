@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-chmod +x
+chmod ug+x .husky/*
+chmod ug+x .git/hooks/*
 yarn run lint-branch-name
