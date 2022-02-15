@@ -26,9 +26,9 @@ rules:
       - revert
       - style
       - test
-#  references-empty:
-#    - 2
-#    - never
+  #  references-empty:
+  #    - 2
+  #    - never
   body-max-line-length:
     - 2
     - always
