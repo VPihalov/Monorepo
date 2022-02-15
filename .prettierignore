@@ -3,3 +3,9 @@ coverage
 node_modules/*
 /idea
 frontend/.next/*
+.nvmrc
+yarn.lock
+backend/.nvmrc
+.husky/prepare-commit-message
+.czrc
+.prettierignore
